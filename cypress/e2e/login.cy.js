@@ -1,4 +1,4 @@
-describe.only("User Authentication", () => {
+describe("User Authentication", () => {
   let user;
   beforeEach(() => {
     cy.visit("/");
