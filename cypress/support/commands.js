@@ -5,6 +5,6 @@ Cypress.Commands.add("login", (username, password) => {
   cy.getByData("login-button").click();
 });
 
-Cypress.Commands.add("getByData", (testId) => {
-  cy.get(`[data-testid="${testId}"]`);
+Cypress.Commands.add("getByData", (selector) => {
+  return cy.get(`[data-test=${selector}]`);
 });

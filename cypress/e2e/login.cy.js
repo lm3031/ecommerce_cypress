@@ -1,12 +1,13 @@
-describe("User Authentication", () => {
+describe.only("User Authentication", () => {
+  let user;
   beforeEach(() => {
     cy.visit("/");
-    cy.fixture("user").then((user) => {
-      this.user = user;
+    cy.fixture("user.json").then((userData) => {
+      user = userData;
     });
   });
-  it("User can successfully log in", () => {
-    cy.login(this.user.username, this.user.password);
+  it.only("User can successfully log in", () => {
+    cy.login(user.username, user.password);
     cy.url().should("include", "/inventory.html");
   });
 
