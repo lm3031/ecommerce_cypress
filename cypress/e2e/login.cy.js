@@ -3,7 +3,7 @@ describe("User Authentication", () => {
     cy.visit("/");
     cy.fixture("user").then((user) => {
       this.user = user;
-
+    });
   });
   it("User can successfully log in", () => {
     cy.login(this.user.username, this.user.password);
