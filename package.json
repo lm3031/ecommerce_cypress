@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "E-commerce app with cypress testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lm3031/sony_cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Luisa M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lm3031/sony_cypress/issues"
+  },
+  "homepage": "https://github.com/lm3031/sony_cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
